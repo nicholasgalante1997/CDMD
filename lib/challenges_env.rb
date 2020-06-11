@@ -1,0 +1,7 @@
+require_relative "challenges.rb"
+require_relative "level_one_challenges.rb"
+require_relative "level_two_challenges.rb"
+require_relative "level_three_challenges.rb"
+require_relative "chance.rb"
+require_relative "team.rb"
+require_relative "player.rb"
