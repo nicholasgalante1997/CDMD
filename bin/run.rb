@@ -68,7 +68,9 @@ elsif initial_response == "GameStart"
   p "Hit enter after five minutes has commenced."
   gets.strip
   while team_one.score < 12 || team.two.score < 12 do
+  puts "#{team_one.team_name}"
   game_.take_turn(team_one)
+  puts "#{team_two.team_name}"
   game_.take_turn(team_two)
   end
 end
