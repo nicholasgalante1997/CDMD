@@ -32,7 +32,15 @@ class Game
         p "Nice"
         p team.score
       else
-        "Okay, now the chance to steal"
+        p "Okay, now the chance to steal"
+        rebuttal = prompt.ask("Did you win the challenge?")
+        if rebuttal == "Y" || rebuttal == "y" || rebuttal == "yes" || rebuttal == "Yes"
+          team.score_point
+          p "Nice"
+          p team.score
+        else
+          p "Next Turn"
+        end
       end
     elsif team.score >= 5 && team.score < 9
       card_draw = rand(26..61)
@@ -43,7 +51,15 @@ class Game
         p "Nice"
         p team.score
       else
-        "Okay, now the chance to steal"
+        p "Okay, now the chance to steal"
+        rebuttal = prompt.ask("Did you win the challenge?")
+        if rebuttal == "Y" || rebuttal == "y" || rebuttal == "yes" || rebuttal == "Yes"
+          team.score_point
+          p "Nice"
+          p team.score
+        else
+            p "Next Turn!"
+        end
       end
     elsif team.score >= 9
       card_draw = rand(62..95)
@@ -54,10 +70,16 @@ class Game
         p "Nice"
         p team.score
       else
-        "Okay, now the chance to steal"
+        p "Okay, now the chance to steal"
+        rebuttal = prompt.ask("Did you win the challenge?")
+        if rebuttal == "Y" || rebuttal == "y" || rebuttal == "yes" || rebuttal == "Yes"
+          team.score_point
+          p "Nice"
+          p team.score
+        else
+            p "Next Turn!"
+        end
       end
     end
   end
-
-
 end

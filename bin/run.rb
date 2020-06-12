@@ -63,6 +63,10 @@ elsif initial_response == "GameStart"
   team_one = Team.new(prompt.ask("Team One, enter your team name."))
   team_two = Team.new(prompt.ask("Team Two, enter your team name."))
   game_ = Game.new(team_one, team_two)
+  p "AND NOW BEGINS THE WINE AND CHEESE RECEPTION!"
+  p "You may now begin the music and cynical trivialties."
+  p "Hit enter after five minutes has commenced."
+  gets.strip
   while team_one.score < 12 || team.two.score < 12 do
   game_.take_turn(team_one)
   game_.take_turn(team_two)
