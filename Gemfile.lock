@@ -22,7 +22,7 @@ GEM
       i18n (>= 1.6, < 2)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
-    json (1.8.6)
+    json (2.3.0)
     method_source (1.0.0)
     minitest (5.14.1)
     mustermann (1.1.1)
@@ -77,7 +77,7 @@ DEPENDENCIES
   byebug (~> 11.1)
   database_cleaner
   faker
-  json (~> 1.8, >= 1.8.5)
+  json (~> 2.3)
   pastel
   pry
   pry-byebug
